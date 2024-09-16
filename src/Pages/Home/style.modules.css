@@ -1,5 +1,6 @@
 .text {
   position: relative;
+  margin: 40px 0;
 }
 
 .text::before {

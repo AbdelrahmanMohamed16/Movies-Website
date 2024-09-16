@@ -55,7 +55,7 @@ export default function Navbar() {
               </ul>
             </>
           )}
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-md-auto mb-2 mb-lg-0">
             {token && (
               <>
                 <li className="nav-item">
