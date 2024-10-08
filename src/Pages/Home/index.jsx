@@ -18,7 +18,7 @@ export default function Home() {
   let { status } = useContext(MoviesContext);
   let navigate = useNavigate();
   return (
-    <div className="row">
+    <div className="row justify-content-center">
       {status === "error" ? (
         navigate("error")
       ) : status === "none" ? (

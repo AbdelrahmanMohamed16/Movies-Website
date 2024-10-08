@@ -57,28 +57,28 @@ export default function Navbar() {
           )}
           <ul className="navbar-nav ms-md-auto mb-2 mb-lg-0">
             {token && (
-              <>
-                <li className="nav-item">
-                  <Link className="nav-link" to="#">
+              <div className="d-flex ">
+                <li className="nav-item me-4 me-lg-0">
+                  <Link className="nav-link" to="">
                     <i className="fa-brands fa-facebook"></i>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="#">
+                <li className="nav-item me-4 me-md-0">
+                  <Link className="nav-link" to="">
                     <i className="fa-brands fa-twitter"></i>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="#">
+                <li className="nav-item me-4 me-md-0">
+                  <Link className="nav-link" to="">
                     <i className="fa-brands fa-instagram"></i>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="#">
+                <li className="nav-item me-4 me-md-0">
+                  <Link className="nav-link" to="">
                     <i className="fa-brands fa-spotify"></i>
                   </Link>
                 </li>
-              </>
+              </div>
             )}
             {!token ? (
               <>

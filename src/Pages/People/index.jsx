@@ -4,7 +4,7 @@ import { PersonsContext } from "../../components/Store/PersonsContextProvider";
 
 export default function People() {
   let { personsData } = useContext(PersonsContext);
-  return personsData.map((person) => (
-    <PersonCard person={person} key={person.id} />
-  ));
+  return personsData
+    .filter((person) => person.name && person.profile_path)
+    .map((person) => <PersonCard person={person} key={person.id} />);
 }

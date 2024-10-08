@@ -4,5 +4,7 @@ import { text } from "./style.modules.css";
 import TvCard from "../../components/TvCard";
 export default function TV() {
   let { tvData } = useContext(TvContext);
-  return tvData.map((tv) => <TvCard tv={tv} key={tv.id} />);
+  return tvData
+    .filter((tv) => tv.name && tv.poster_path)
+    .map((tv) => <TvCard tv={tv} key={tv.id} />);
 }

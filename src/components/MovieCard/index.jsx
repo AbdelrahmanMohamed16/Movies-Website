@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function MovieCard({ movie: { poster_path, title, id } }) {
   return (
-    <div className="col-md-2">
+    <div className="col-md-2 my-1">
       <div className="movie_card border-0 w-100">
         <Link to={`/movie/${id}`}>
           <img
@@ -13,7 +13,7 @@ export default function MovieCard({ movie: { poster_path, title, id } }) {
             className="w-100"
           />
         </Link>
-        <h4 className="my-1 text-decoration-none">{title}</h4>
+        <h4 className="my-2 text-decoration-none">{title}</h4>
       </div>
     </div>
   );

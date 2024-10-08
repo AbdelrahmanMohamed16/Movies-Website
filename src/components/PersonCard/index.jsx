@@ -13,7 +13,7 @@ export default function PersonCard({ person: { profile_path, name, id } }) {
             className="w-100"
           />
         </Link>
-        <h4 className="my-1 text-decoration-none">{name}</h4>
+        <h4 className="my-2 text-decoration-none">{name}</h4>
       </div>
     </div>
   );
